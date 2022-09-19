@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #6d9ac4;
+}
+.imput__item h1 {
+  font-size: 36px;
+  margin: 40px 0px 40px 40px;
+  text-transform: uppercase;
+}
+.container {
+  width: 30%;
+  margin: 30px auto;
+}
+.email__item {
+  position: relative;
+}
+.email__item span {
+  position: absolute;
+  font-size: 24px;
+  top: 0;
+  left: 40px;
+}
+.password__item {
+  position: relative;
+}
+.password__item span {
+  position: absolute;
+  font-size: 24px;
+  top: 0;
+  left: 40px;
+}
+.imput__item {
+  height: 700px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.imput__item button {
+  width: 80%;
+  text-transform: uppercase;
+  background-color: #ed5783;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  height: 40px;
+  border: none;
+  margin: 10px 40px 20px 40px;
+  transition: all 0.3s ease;
+}
+.imput__item button:active {
+  transform: scale(0.97);
+}
+.imput__item input {
+  font-size: 24px;
+  padding-left: 10px;
+  width: 80%;
+  height: 40px;
+  margin: 30px 40px 20px 40px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  outline: none;
+}
+.line {
+  position: relative;
+  width: 80%;
+  height: 2px;
+  margin: 10px 40px 20px 40px;
+  background: #dddddd;
+}
+.line span {
+  top: -18px;
+  left: 45%;
+  position: absolute;
+  border: 0.5px solid #dddddd;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 10px;
+  background: white;
+}
+.icon__items {
+  margin: 10px auto;
+}
+
+.icon__items img {
+  width: 180px;
+}
+.tile {
+  width: 80%;
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.imput__item p {
+  font-size: 24px;
+  margin-left: 40px;
+}
+.text {
+  width: fit-content;
+  padding: 5px;
+  background: aqua;
+  margin-left: 40px;
+  font-size: 26px;
+}
