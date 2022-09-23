@@ -1,0 +1,128 @@
+.grid__item {
+  display: grid;
+  gap: 20px 50px;
+
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.col-12 {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* text-transform: uppercase; */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.col-12:hover {
+  background-color: #c0d8fd;
+}
+.col-12:active {
+  transform: scale(1.1);
+}
+.col-12 img {
+  width: 150px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .grid__item {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px 30px;
+  }
+  .col-12 img {
+    width: 120px;
+  }
+  .row h3 {
+    font-size: 32px;
+  }
+  [align] {
+    text-align: right;
+  }
+  .col-8 h2 {
+    text-align: left;
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .grid__item {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 50px;
+  }
+  .col-12 img {
+    width: 150px;
+  }
+  .row h3 {
+    font-size: 26px;
+  }
+  [align] {
+    text-align: right;
+  }
+  .col-8 h2 {
+    text-align: left;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .grid__item {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px 10px;
+  }
+  .col-12 img {
+    width: 100px;
+  }
+  .row h3 {
+    font-size: 16px;
+  }
+  [align] {
+    text-align: left;
+  }
+  .col-8 h2 {
+    text-align: left;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .grid__item {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px 20px;
+  }
+  .col-12 img {
+    width: 120px;
+  }
+  .row h3 {
+    font-size: 16px;
+  }
+  [align] {
+    text-align: left;
+  }
+  .col-8 h2 {
+    text-align: left;
+    font-size: 28px;
+  }
+}
+
+/* 480pxgacha */
+
+@media only screen and (max-width: 480px) {
+  .grid__item {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .col-12 img {
+    width: 140px;
+  }
+  .row h3 {
+    font-size: 16px;
+  }
+  [align] {
+    text-align: left;
+  }
+  .col-8 h2 {
+    text-align: left;
+    font-size: 18px;
+  }
+}
